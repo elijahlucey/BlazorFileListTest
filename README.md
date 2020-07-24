@@ -1,5 +1,5 @@
 # BlazorFileListTest
-Illustration of a problem I've been having trying to work with a container of uploads in Blazor Server using Tewr's BlazorFileReader library. Just a simple page allowing uploads of multiple image files one by one with the ability to remove entries.
+Illustration of a problem I've been having trying to work with a container of uploads in Blazor Server using the external [BlazorFileReader](https://github.com/Tewr/BlazorFileReader) library. Just a simple page allowing uploads of multiple image files one by one with the ability to remove entries.
 
 To see why I created this repository, add multiple file entries that can be visually distinguished (via filename, image content, or both) and try to remove an entry that isn't the last one (i.e. if a list contains 0.jpg, 1.jpg, 2.jpg, choose any entry to delete except for 2.jpg). No matter which entry you choose to delete, the final entry will be removed from the list.
 
