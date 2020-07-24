@@ -1,0 +1,12 @@
+@inherits UploadEditorRowBase
+
+<div>
+    <input type="file" @ref="Vm.Input" @onchange="OnUploadChange"
+        accept=".jpg, .jpeg, .pdf, .png, .gif" />
+
+    <button class="smbutton" type="button" @onclick="Vm.RemoveSelf">Remove</button>
+</div>
+
+@if(!string.IsNullOrWhiteSpace(_uploadedFile)) {
+    <img src="@_uploadedFile" class="uploadPreview" />
+}

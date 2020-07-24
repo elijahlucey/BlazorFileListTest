@@ -1,0 +1,15 @@
+﻿@page "/"
+@using BlazorFileListTest.ViewModel
+@inherits IndexBase
+
+<h2>Items</h2>
+<br />
+
+@foreach(UploadViewModel upload in _vm.Uploads) {
+    <UploadEditorRow Vm=@upload />
+}
+
+<button class="smbutton block" type="button" @onclick="AddBlankUpload">
+    <span class="oi oi-data-transfer-upload" aria-hidden="true"></span>
+    Upload
+</button>
